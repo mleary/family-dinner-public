@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: scripts/build_pages.py
+
+website:
+  title: "Dinner at the Learys"
+  description: "Menus from dinners we cook at home."
+  site-url: https://mleary.github.io/family-dinner-public/
+  open-graph: true
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    left:
+      - href: index.qmd
+        text: Dinners
+      - href: about.qmd
+        text: About
+  page-footer:
+    left: "Dinner at the Learys · Cooked at home, eaten at the table"
+    right:
+      - text: "About the recipes"
+        href: about.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [cosmo, styles.scss, styles-dark.scss]
+    toc: false
+    lang: en

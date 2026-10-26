@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-25",
+  "title": "Stamford Bridge Supper",
+  "slug": "stamford-bridge-supper",
+  "guests": null,
+  "theme": "Chelsea 0–2 Spurs",
+  "tags": ["Potato bar", "Comfort food"],
+  "summary": "A cold-night potato bar with beef chili and all the toppings, the day after Spurs won 2–0 at Stamford Bridge.",
+  "style": {"bg": "#132257", "ink": "#FFFFFF", "accent": "#B8912F", "display_font": "Limelight"},
+  "courses": [
+    {"label": "Salad", "dish": "Caesar Salad", "source": null, "adaptations": []},
+    {"label": "Main", "dish": "Baked Potato Bar", "source": null, "adaptations": [], "notes": "Toppings: beef chili, bacon, chives, cheddar, sour cream, and butter."},
+    {"label": "Side", "dish": "Roasted Broccoli", "source": null, "adaptations": []},
+    {"label": "Dessert", "dish": "Vanilla Ice Cream with Skillet Apples and Caramel Sauce", "source": null, "adaptations": []}
+  ]
+}

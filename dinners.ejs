@@ -1,0 +1,15 @@
+```{=html}
+<div class="dinner-grid list">
+<% for (const item of items) { %>
+<a class="dinner-tile" href="<%- item.path %>" <%= metadataAttrs(item) %>>
+  <p class="tile-date">
+    <span class="tile-weekday"><%= item['dinner-weekday'] %></span>
+    <span class="tile-day"><%= item['dinner-day'] %></span>
+  </p>
+  <img src="<%- item.image %>" alt="Menu card for <%= item.title %>" loading="lazy">
+  <h3 class="tile-title"><%= item.title %></h3>
+  <p class="tile-desc"><%= item.description %></p>
+</a>
+<% } %>
+</div>
+```

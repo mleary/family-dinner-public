@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-18",
+  "title": "Sunday Family Dinner",
+  "slug": "sunday-family-dinner",
+  "guests": "About 10, kids included",
+  "theme": "Pasta night, Italian travel-poster style",
+  "tags": ["Pasta", "Cookbook"],
+  "summary": "A Sunday pasta dinner for the family: a milder chili crisp cacio e pepe, then tagliatelle with prosciutto and nutmeg.",
+  "style": {"bg": "#F1E3C6", "ink": "#1F4E5F", "accent": "#C0492B", "display_font": "Abril Fatface"},
+  "courses": [
+    {"label": "Salad", "dish": "Caesar Salad", "source": null, "adaptations": []},
+    {"label": "First Course", "dish": "Chili Crisp Cacio e Pepe",
+     "source": {"book": "Anything's Pastable", "author": "Dan Pashman", "page": 70, "title": null},
+     "adaptations": ["Milder: less chili crisp, more butter, no Sichuan peppercorns", "Bucatini instead of mafalde", "Sauce made up to 2 hours ahead"]},
+    {"label": "Second Course", "dish": "Tagliatelle with Prosciutto, Nutmeg, and Parmesan",
+     "source": {"book": "Anything's Pastable", "author": "Dan Pashman", "page": null, "title": "Tagliatelle with Prosciutto, Nutmeg, and Parmesan"},
+     "adaptations": ["Cooked in the first course's pasta water"]}
+  ]
+}

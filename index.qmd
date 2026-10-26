@@ -1,0 +1,14 @@
+---
+title: "Dinner at the Learys"
+subtitle: "Menus from dinners we cook at home, newest first."
+listing:
+  id: dinners
+  contents: dinners/*/index.qmd
+  template: dinners.ejs
+  sort: "date desc"
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+---

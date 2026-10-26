@@ -1,0 +1,81 @@
+/*-- scss:defaults --*/
+// House style: plain frame so each dinner's own theme can stand out.
+$font-family-sans-serif: "Public Sans", system-ui, -apple-system, sans-serif;
+$headings-font-family: "Fraunces", Georgia, serif;
+$headings-font-weight: 600;
+$body-bg: #FBFAF8;
+$body-color: #1E242B;
+$primary: #2F5D50;
+$link-color: #2F5D50;
+$navbar-bg: #FBFAF8;
+$navbar-fg: #1E242B;
+$footer-bg: #FBFAF8;
+$border-color: #E3E1DC;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;600&display=swap");
+
+body { font-size: 1.05rem; }
+.navbar { border-bottom: 1px solid $border-color; }
+.navbar-title { font-family: $headings-font-family; font-weight: 600; }
+h1, h2, .title { text-wrap: balance; }
+
+// Overview grid: each tile is the dinner's menu card, with the date above it.
+.dinner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 2.5rem 2rem;
+  margin-top: 1rem;
+}
+.dinner-tile { display: flex; flex-direction: column; color: inherit; text-decoration: none; min-width: 0; }
+.dinner-tile:hover { color: inherit; }
+.tile-date { margin: 0 0 .6rem; border-bottom: 2px solid $body-color; padding-bottom: .4rem; display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.tile-weekday { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 600; color: $primary; }
+.tile-day { font-family: $headings-font-family; font-weight: 600; font-size: 1.35rem; font-variant-numeric: tabular-nums; }
+.dinner-tile img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.08);
+  transition: transform .15s ease;
+}
+.dinner-tile:hover img { transform: translateY(-3px); }
+.tile-title { font-family: $headings-font-family; font-size: 1.3rem; margin: .8rem 0 .25rem; }
+.tile-desc { margin: 0; font-size: .95rem; color: rgba($body-color, .72); }
+@media (prefers-reduced-motion: reduce) { .dinner-tile img { transition: none; } }
+
+// Footer
+.nav-footer { border-top: 1px solid $border-color; font-size: .9rem; }
+.nav-footer-left { font-family: $headings-font-family; }
+
+// Dinner page: the band is the only themed part. It takes its colors and
+// display font from the dinner's own style (set inline as CSS variables).
+.dinner-band {
+  background: var(--band-bg);
+  color: var(--band-ink);
+  border-radius: 10px;
+  padding: clamp(20px, 4vw, 40px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 240px);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+  margin: 1rem 0 2rem;
+}
+.dinner-band .band-date { text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; color: var(--band-accent); margin: 0 0 .5rem; font-weight: 600; }
+.dinner-band h1 { font-family: var(--band-font), $headings-font-family; color: var(--band-ink); font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.05; margin: 0 0 .75rem; font-weight: 400; }
+.dinner-band .band-theme { border-top: 1px solid var(--band-accent); border-bottom: 1px solid var(--band-accent); display: inline-block; padding: .25rem .75rem; font-size: .9rem; margin-bottom: 1rem; }
+.dinner-band .band-summary { margin: 0; opacity: .9; max-width: 34em; }
+.dinner-band img { width: 100%; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+@media (max-width: 640px) {
+  .dinner-band { grid-template-columns: 1fr; }
+  .dinner-band img { max-width: 260px; justify-self: center; }
+}
+
+// Course list
+.courses { display: grid; gap: 1.25rem; margin: 0 0 2rem; }
+.course .course-label { text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 600; color: $primary; }
+.course h3 { margin: .15rem 0 .2rem; font-size: 1.35rem; }
+.course .credit { font-size: .92rem; color: rgba($body-color, .7); margin: 0; }
+.course ul { margin: .4rem 0 0; font-size: .95rem; }
+.course .course-notes { margin: .3rem 0 0; font-size: .95rem; }
