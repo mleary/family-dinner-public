@@ -2,7 +2,7 @@
 
 Public site for dinners we cook at home: one page per dinner with its menu card, courses, and credits, plus site-wide search. Built with Quarto.
 
-Content in `content/dinners/` comes from the private `family-dinner` repo. Only allowlisted files are copied: `dinner.json`, `menu.png`, optional `public.md`, and listed photos. Don't add recipe text from books here.
+Content in `content/dinners/` is written by the private `family-dinner` repo's sync workflow. Don't edit it by hand: the next sync replaces the whole folder. Each dinner has only allowlisted files: `dinner.json`, `menu.jpg`, optional `public.md`, and `photos/*.jpg`. Upcoming dinners appear on their date.
 
 ## Preview
 

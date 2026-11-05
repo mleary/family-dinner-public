@@ -1,7 +1,7 @@
 """Generate one Quarto page per dinner from content/dinners/*/dinner.json.
 
 Runs as Quarto's pre-render step. Input is what the private repo will sync:
-content/dinners/<folder>/dinner.json plus menu.png. Output goes to
+content/dinners/<folder>/dinner.json plus menu.jpg. Output goes to
 dinners/<folder>/ (generated, not committed).
 """
 import json
@@ -49,7 +49,7 @@ def band(d):
     {theme}
     <p class="band-summary">{escape(d.get('summary') or '')}</p>
   </div>
-  <a href="menu.png"><img src="menu.png" alt="Menu card for {escape(d['title'])}"></a>
+  <a href="menu.jpg"><img src="menu.jpg" alt="Menu card for {escape(d['title'])}"></a>
 </section>
 ```
 """
@@ -94,7 +94,7 @@ def page(d, folder):
         f"dinner-weekday: {yaml_str(date.fromisoformat(d['date']).strftime('%A'))}\n"
         f"dinner-day: {yaml_str(date.fromisoformat(d['date']).strftime('%B %-d, %Y'))}\n"
         f"description: {yaml_str(d.get('summary'))}\n"
-        "image: menu.png\n"
+        "image: menu.jpg\n"
         f"categories: {json.dumps(cats, ensure_ascii=False)}\n"
         "title-block-style: none\n"
         f"{header}"
@@ -118,7 +118,9 @@ def main():
         dest.mkdir(parents=True)
         (dest / "index.qmd").write_text(page(d, folder))
         for f in folder.iterdir():
-            if f.name not in ("dinner.json", "public.md"):
+            if f.is_dir():
+                shutil.copytree(f, dest / f.name)
+            elif f.name not in ("dinner.json", "public.md"):
                 shutil.copy2(f, dest / f.name)
 
 
