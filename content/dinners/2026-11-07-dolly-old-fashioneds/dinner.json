@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-07",
+  "title": "Dolly & the Old Fashioneds",
+  "slug": "dolly-old-fashioneds",
+  "guests": "4 adults plus kids",
+  "theme": "Dolly Parton and old-fashioneds, an Indian supper club with Dishoom-inspired cocktails",
+  "tags": [
+    "Indian",
+    "Cocktails",
+    "Supper club"
+  ],
+  "summary": "A Dolly Parton supper club with Dishoom-inspired old-fashioneds, chilli cheese toast, and tikka masala two ways.",
+  "style": {
+    "bg": "#1D2A4A",
+    "ink": "#FFFFFF",
+    "accent": "#E8B04A",
+    "display_font": "Rye"
+  },
+  "courses": [
+    {
+      "label": "Cocktail",
+      "dish": "Viceroy's Old-Fashioned",
+      "source": {
+        "book": "Dishoom: From Bombay with Love",
+        "author": "Shamil Thakrar, Kavi Thakrar, Naved Nasir",
+        "page": 342,
+        "title": "Viceroy's Old-Fashioned"
+      },
+      "adaptations": [
+        "Aged about 9 days instead of the month the book suggests"
+      ]
+    },
+    {
+      "label": "Starter",
+      "dish": "Chilli Cheese Toast",
+      "source": null,
+      "adaptations": [
+        "Our own take on the Dishoom café dish"
+      ]
+    },
+    {
+      "label": "Starter",
+      "dish": "Bhel Puri",
+      "source": null,
+      "adaptations": [
+        "Built from a store-bought bhel kit"
+      ]
+    },
+    {
+      "label": "Main",
+      "dish": "Chicken and Paneer Tikka Masala",
+      "source": {
+        "book": null,
+        "author": "Chris Bellers",
+        "page": null,
+        "title": "Curry Stand Chicken Tikka Masala Sauce (Allrecipes)"
+      },
+      "adaptations": [
+        "Sauce doubled and split between chicken and a paneer version"
+      ],
+      "notes": "Served with store-bought naan brushed with garlic butter"
+    },
+    {
+      "label": "Kids",
+      "dish": "Pizza",
+      "source": null,
+      "adaptations": []
+    }
+  ]
+}

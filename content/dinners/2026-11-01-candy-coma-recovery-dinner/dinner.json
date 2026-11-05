@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-01",
+  "title": "Candy Coma Recovery Dinner",
+  "slug": "candy-coma-recovery-dinner",
+  "guests": "4 adults, 2 kids",
+  "theme": "The day after Halloween — keep it simple",
+  "tags": [
+    "Salmon",
+    "Weeknight",
+    "Kids"
+  ],
+  "summary": "A low-effort Sunday after Halloween — lemon salmon over Caesar, buttered pasta for the kids, and sundaes topped with the leftover candy haul.",
+  "style": {
+    "bg": "#1F1630",
+    "ink": "#F6EAD8",
+    "accent": "#F29B4B",
+    "display_font": "Fraunces"
+  },
+  "courses": [
+    {
+      "label": "Main",
+      "dish": "Salmon Caesar",
+      "source": null,
+      "adaptations": [],
+      "notes": "Lemon roasted salmon over Caesar salad with bottled dressing and store-bought croutons"
+    },
+    {
+      "label": "Kids",
+      "dish": "Buttered Pasta",
+      "source": null,
+      "adaptations": []
+    },
+    {
+      "label": "Dessert",
+      "dish": "Ice Cream Sundaes",
+      "source": null,
+      "adaptations": [],
+      "notes": "Topped with crushed leftover Halloween candy"
+    }
+  ]
+}
