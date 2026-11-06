@@ -29,9 +29,9 @@ h1, h2, .title { text-wrap: balance; }
 }
 .dinner-tile { display: flex; flex-direction: column; color: inherit; text-decoration: none; min-width: 0; }
 .dinner-tile:hover { color: inherit; }
-.tile-date { margin: 0 0 .6rem; border-bottom: 2px solid $body-color; padding-bottom: .4rem; display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.tile-date { margin: 0 0 .6rem; border-bottom: 2px solid $body-color; padding-bottom: .4rem; display: flex; flex-direction: column; gap: .15rem; }
 .tile-weekday { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 600; color: $primary; }
-.tile-day { font-family: $headings-font-family; font-weight: 600; font-size: 1.35rem; font-variant-numeric: tabular-nums; }
+.tile-day { font-family: $headings-font-family; font-weight: 600; font-size: 1.35rem; line-height: 1.15; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .dinner-tile img {
   width: 100%;
   aspect-ratio: 9 / 16;
