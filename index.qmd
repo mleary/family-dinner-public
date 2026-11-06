@@ -1,6 +1,6 @@
 ---
 title: "Dinner at the Learys"
-subtitle: "Menus from dinners we cook at home, newest first."
+subtitle: "Menus from dinners we cook at home."
 listing:
   id: dinners
   contents: dinners/*/index.qmd
