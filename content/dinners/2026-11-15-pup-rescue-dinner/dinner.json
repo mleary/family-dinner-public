@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-15",
+  "title": "The Pup Rescue Dinner",
+  "slug": "pup-rescue-dinner",
+  "guests": "Family incl. kids",
+  "theme": "Pup Rescue (Paw Patrol night, theme by Tess)",
+  "tags": [
+    "Pasta",
+    "Cookbook",
+    "Kids"
+  ],
+  "summary": "Tess picked a pup-rescue theme; mapo tofu cascatelli for the grown-ups, spaghetti your way for the kids, and ice cream to finish.",
+  "style": {
+    "bg": "#BFE3FF",
+    "ink": "#13285E",
+    "accent": "#E63946",
+    "display_font": "Fredoka"
+  },
+  "courses": [
+    {
+      "label": "Appetizer",
+      "dish": "Bruschetta",
+      "source": null,
+      "adaptations": []
+    },
+    {
+      "label": "Salad",
+      "dish": "Caesar Salad",
+      "source": null,
+      "adaptations": []
+    },
+    {
+      "label": "Main",
+      "dish": "Mapo Tofu Cascatelli",
+      "source": {
+        "book": "Anything's Pastable",
+        "author": "Dan Pashman",
+        "page": 165,
+        "title": "Mapo Tofu Cascatelli"
+      },
+      "adaptations": []
+    },
+    {
+      "label": "Kids",
+      "dish": "Spaghetti with butter or red sauce",
+      "source": null,
+      "adaptations": []
+    },
+    {
+      "label": "Dessert",
+      "dish": "Ice Cream",
+      "source": null,
+      "adaptations": []
+    }
+  ]
+}
