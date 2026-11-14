@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-14",
+  "title": "A Dinner Through the Ages",
+  "slug": "history-night",
+  "guests": "3 adults, 4 kids, 1 baby",
+  "theme": "History night",
+  "tags": [
+    "History",
+    "Kids' table"
+  ],
+  "summary": "A history-themed family dinner, with tomato-and-egg shakshuka pasta for the grown-ups and Jefferson-era favorites for the kids.",
+  "style": {
+    "bg": "#F2E6C9",
+    "ink": "#2A1C10",
+    "accent": "#7A1F2B",
+    "display_font": "Cinzel"
+  },
+  "courses": [
+    {
+      "label": "Main",
+      "dish": "Shakshuka and Shells",
+      "source": {
+        "book": null,
+        "author": null,
+        "page": 133,
+        "title": null
+      },
+      "adaptations": [],
+      "notes": "Grown-ups' main. Eggs poached in tomato sauce with pasta shells."
+    },
+    {
+      "label": "Kids' Main",
+      "dish": "Mac and Cheese",
+      "source": null,
+      "adaptations": []
+    },
+    {
+      "label": "Side",
+      "dish": "Peas",
+      "source": null,
+      "adaptations": []
+    },
+    {
+      "label": "Kids' Main",
+      "dish": "Chicken Nuggets",
+      "source": null,
+      "adaptations": []
+    }
+  ]
+}
